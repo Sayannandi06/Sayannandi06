@@ -1,0 +1,64 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: #333;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f4b400; /* Change color on hover */
+}
+
+/* Sections to fill content */
+section {
+    height: 100vh;
+    padding: 2rem;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
+
+#home { background: #f4f4f4; }
+#about { background: #eaeaea; }
+#services { background: #dedede; }
+#contact { background: #cfcfcf; }
+
+/* Scrolled state styling */
+.navbar.scrolled {
+    background-color: #111;
+    padding: 0.5rem 0;
+}
+
